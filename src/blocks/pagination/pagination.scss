@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   margin-top: $typo-margin-vertical;
   margin-bottom: $typo-margin-vertical;
+  justify-content: center;
 
   &__item {
     display: block;
@@ -15,7 +16,7 @@
     padding: 0.3em 0.6em;
     text-decoration: none;
     text-align: center;
-    color: $text-color;
+    color: #2b7a78;
 
     & + & {
       border-left: 0;

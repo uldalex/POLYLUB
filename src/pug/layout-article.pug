@@ -1,0 +1,261 @@
+//- Стандартный шаблон страницы
+
+include mixins.pug
+
+doctype html
+html(class='page  no-js', lang='ru')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- Edge и ряд мобильных браузеров слишком умны. Отключим это.
+    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='date=no')
+    meta(name='format-detection', content='address=no')
+    meta(name='format-detection', content='email=no')
+    meta(content='notranslate', name='google')
+    block meta
+      title Home
+
+    block head
+      link(rel='stylesheet', href='css/style.css')
+      script
+        include ../js/head-script.js
+
+  body
+    noscript У вас отключен JavaScript. Это пугает.
+
+    .page__inner
+      .page__content
+        //- header
+        +page-header()
+          +logo('/')
+            svg(class="logo__svg")
+             use(xlink:href="img/sprite.svg#logo") 
+            h1.logo__title ПОЛИЛАБ
+          block nav
+          .right-part
+            a(href="tel:+79333333")
+              svg(class="icon-fill" width="20px" height="20px")
+                use(xlink:href="img/sprite.svg#phone")
+              <span>+7 (955) 796-01-45</span>
+            a.btn.defoult-btn(href="#feedback" data-toggle="modal" data-target="#feedback") Заказать звонок
+          +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
+        .site-content
+          +breadcrumbs()
+            +breadcrumbs-item('Главная', '/index.html')
+            +breadcrumbs-item('Статьи')
+          .content-area
+            .site-main
+              .posts-container
+                .article
+                  .entry-header
+                    h2.entry-title
+                     a(href="#") Заголовок статьи
+                  .entry-meta
+                    .entry-date 21.11.2020
+                    .entry-category Фармокология
+                  .article_post
+                    .entry-image
+                      img(src="/img/image.jpg") 
+                    .post-box__content Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел. 
+                      a.btn.defoult-btn(href="#") Подробнее
+                .article
+                  .entry-header
+                    h2.entry-title
+                     a(href="#") Заголовок статьи
+                  .entry-meta
+                    .entry-date 21.11.2020
+                    .entry-category Фармокология
+                  .article_post
+                    .entry-image
+                      img(src="/img/image1.jpg") 
+                    .post-box__content Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел. 
+                      a.btn.defoult-btn(href="#") Подробнее
+                .article
+                  .entry-header
+                    h2.entry-title
+                     a(href="#") Заголовок статьи
+                  .entry-meta
+                    .entry-date 21.11.2020
+                    .entry-category Фармокология
+                  .article_post
+                    .entry-image
+                      img(src="/img/image2.jpg") 
+                    .post-box__content Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел. 
+                      a.btn.defoult-btn(href="#") Подробнее
+                .article
+                  .entry-header
+                    h2.entry-title
+                     a(href="#") Заголовок статьи
+                  .entry-meta
+                    .entry-date 21.11.2020
+                    .entry-category Фармокология
+                  .article_post
+                    .entry-image
+                      img(src="/img/image3.jpg") 
+                    .post-box__content Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел. 
+                      a.btn.defoult-btn(href="#") Подробнее
+                +pagination()
+                    +pagination-item('1', '/1', true)
+                    +pagination-item('2', '/2')
+                    +pagination-item('3', '/3')
+                    +pagination-item('...')
+                    +pagination-item('9', '/9')
+                    +pagination-item('10', '/10')
+                    +pagination-item('→', '/10')    
+            .sitebar
+              .widget
+                .widget-header Рубрики
+                ul
+                  li 
+                    a(href="#") Фармокология
+                  li
+                    a(href="#") Медицина
+                  li
+                    a(href="#") Новости отрасли
+              .widget
+                .widget-header Популярные статьи
+                ul
+                  li
+                    a(href="#") Заголовок статьи
+                  li
+                   a(href="#") Коллаборация науки и природы
+                  li
+                    a(href="#") Новости отрасли
+              .widget
+                .widget-header Облако тегов:
+                ul
+                  li
+                    a(href="#") Заголовок статьи
+                  li
+                    a(href="#") Коллаборация науки и природы
+                  li
+                    a(href="#") Новости отрасли
+
+
+
+
+
+      //-footer
+      svg(class="border")
+        use(xlink:href="img/sprite.svg#border-footer")    
+      .page__footer-wrapper
+        +page-footer()
+          block footer
+          .page-footer__inner
+              .page-footer__row
+                .page-footer__column1
+                  .page-footer__logo
+                    svg(class="icons" width="155px" height="72px")
+                              use(xlink:href="img/sprite.svg#logo_bottom")
+                    
+                  .page-footer__adress Россия, 125047, г. Москва,<br>Профсоюзная улица 93А
+                  .page-footer__contacts 
+                    a(href="tel:+74957670007") <span> Тел.:</span> +7 (495) 767 00 07
+                    a(href="mailto:info@pgplaw.ru") <span> E-mail:</span> info@pgplaw.ru
+                  .page-footer__feedback
+                    a.btn.defoult-btn.defoult-btn--blue(href="#feedback" data-toggle="modal" data-target="#feedback")
+                     svg(class="icons" width="18px" height="18px")
+                              use(xlink:href="img/sprite.svg#callback") 
+                     span Заказать звонок
+                .page-footer__column2
+                  .page-footer__map
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ee30d1583797a66249ebd98851fdd95c849fae5c28cb6f3934e19aacc573859&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        .page-footer__copyright
+                      span © 2020 POLIFARM
+                      a(href="#") фармацевтическая компания  
+            
+
+    +modal("ack","Задать вопрос")
+        .modal__body 
+          form#feedback_form.modal__form
+            .form-control
+              label(for="lastname") Фамилия
+              input#lastname.require(required="required" name="lastname" type="text" autocomplete="off")
+            .form-control
+              label(for="name") Имя
+              input#name.require(required="required" name="name" type="text" autocomplete="off")
+            .form-control
+              label(for="phone") Телефон с кодом страны и города
+              input#phone.require(required="required" name="phone" type="text" autocomplete="off")
+            .form-radio
+              div
+                input#property.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="property") Я врач
+              div
+                input#company.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="company") Я пациент
+            .form-control
+            label(for="message") Суть вашего вопроса
+              textarea#message(name="message" required="required") 
+             
+            .form-control
+              input.button(type="submit" value="Задать вопрос")
+            .form-agreement
+              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+    +modal("feedback","Заказать звонок")
+        .modal__body 
+          form#feedback_form.modal__form
+            .form-control
+              label(for="lastname") Фамилия
+              input#lastname.require(required="required" name="lastname" type="text" autocomplete="off")
+            .form-control
+              label(for="name") Имя
+              input#name.require(required="required" name="name" type="text" autocomplete="off")
+            .form-control
+              label(for="phone") Телефон с кодом страны и города
+              input#phone.require(required="required" name="phone" type="text" autocomplete="off")
+            .form-radio
+              div
+                input#property.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="property") Я врач
+              div
+                input#company.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="company") Я пациент
+            .form-control
+            label(for="message") Суть вашего вопроса
+              textarea#message(name="message" required="required") 
+             
+            .form-control
+              input.button(type="submit" value="Заказать звонок")
+            .form-agreement
+              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+    +modal("consult","Нужна консультация")
+        .modal__body 
+          form#feedback_form.modal__form
+            .form-control
+              label(for="lastname") Фамилия
+              input#lastname.require(required="required" name="lastname" type="text" autocomplete="off")
+            .form-control
+              label(for="name") Имя
+              input#name.require(required="required" name="name" type="text" autocomplete="off")
+            .form-control
+              label(for="mail") Электронная поста
+              input#phone.require(required="required" name="mail" type="text" autocomplete="off")
+            .form-radio
+              div
+                input#property.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="property") Я врач
+              div
+                input#company.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="company") Я пациент
+            .form-control
+            label(for="message") Какого рода консультация вам требуется?
+              textarea#message(name="message" required="required") 
+             
+            .form-control
+              input.button(type="submit" value="Получить консультацию")
+            .form-agreement
+              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта»      
+    +modal("doctor","Анкета для врачей")
+        .modal__body 
+    +modal("man","Анкета для пациентов")
+        .modal__body 
+
+    block page-bottom
+      script(src='js/bundle.js')
+

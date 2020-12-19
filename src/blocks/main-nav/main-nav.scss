@@ -68,12 +68,12 @@ background-color: $body-bg;
     border-bottom: 1px dashed transparent;
     transition:all 0.5s linear;
       &--active {
-        border-bottom: 1px dashed #2b7a77;
+        border-bottom: 1px dashed #27363b;
         transition:all 0.5s linear;
 
       & > #{$block-name}__link { // stylelint-disable-line  selector-combinator-blacklist
-        color: $black;
-        background-color: $white;
+        color:#27363b;
+
       }
     }
     & a{
@@ -99,19 +99,8 @@ background-color: $body-bg;
 
     &:hover,
     &:focus {
-      text-decoration: none;
-      color:#ffffff;
-      background-color: $vaiolit;
-     
-      & svg{
-        stroke:  #ffffff;
-        transform: rotate(180deg);
-      }
     }
-    & h3{
-     font-size:24px;
-     color: #6f2d6b;
-    }
+ 
 
     &--lvl-2 {
       min-width: 200px;
