@@ -5888,6 +5888,6 @@
       var splide =new Splide( '#carousel', {
             type: 'loop',
             perPage: 1,
-            autoplay: true,
+            autoplay: false,
             } ).mount();
     } );

@@ -17,22 +17,32 @@ mixin victory(text, mods)
         allMods = allMods + ' victory--' + modsList[i].trim();
       }
     }
-
+  svg(class="border")
+    use(xlink:href="img/sprite.svg#border")
   .victory(class=allMods)&attributes(attributes)
     .victory__inner
       .victory__row
-        h3 Наши победы
+        h3 Коллаборация науки и природы
         .splide#victory
           .victory_carousel__store-desckription
           .splide__track
              ul.splide__list.victory__list
                 li.splide__slide
                   .victory__slide
-                    a(href="#").victory__link Юристы практики банкротства сохранили активы клиента в размере 4,45 млрд руб. в споре о субсидиарный ответственности.
+                    a(href="#").victory__link В современных условиях развития научно-технической сферы особое значение приобретает тенденция формирования научных коллабораций.
+                    svg(class="icon-fill" width="50px" height="100px")
+                      use(xlink:href="img/sprite.svg#leaf")
                 li.splide__slide
                   .victory__slide
-                    a(href="#").victory__link Юристы практики таможенного права «Пепеляев Групп» завершили проект по судебному обжалованию и признанию незаконным отказа таможенного органа клиенту.				
+                    a(href="#").victory__link Коллаборации научных организаций рассматриваются в статье в качестве инфраструктурного элемента науки в рамках процесса объединения интеллектуальных ресурсов.
+                    svg(class="icon-fill" width="50px" height="100px")
+                      use(xlink:href="img/sprite.svg#plant")
                 li.splide__slide
                   .victory__slide
-                    a(href="#").victory__link Антимонопольная практика «Пепеляев Групп» успешно доказали отсутствие картельного сговора на рынке дорожного строительства в Новосибирском УФАС.				
+                    a(href="#").victory__link Антимонопольная практика «Пепеляев Групп» успешно доказали отсутствие картельного сговора на рынкедорожного строительства в Новосибирском УФАС.
+                    svg(class="icon-fill" width="50px" height="100px")
+                      use(xlink:href="img/sprite.svg#plant1")
+ 
+  svg(class="border-bottom")
+    use(xlink:href="img/sprite.svg#border")
       block

@@ -35,197 +35,23 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           <div class="page-header__grid"><a class="logo" href="/"><svg class="logo__svg">
                 <use xlink:href="img/sprite.svg#logo"> </use>
               </svg>
-              <h1 class="logo__title">Пепеляев Групп</h1>
+              <h1 class="logo__title">ПОЛИЛАБ</h1>
             </a>
-            <div class="header-menu">
-              <div class="header-menu__inner">
-                <ul class="header-menu__list">
-                  <li class="header-menu__item" id="search-toggler"><svg class="icons" width="18px" height="18px">
-                      <use xlink:href="img/sprite.svg#search"></use>
-                    </svg><a class="header-menu__link header-menu__search" href="#"><span>Поиск</span></a></li>
-                  <li class="header-menu__item"><a class="header-menu__link header-menu__phone" href="tel:+74957670007"><svg class="icon-fill" width="20px" height="20px">
-                        <use xlink:href="img/sprite.svg#phone"></use>
-                      </svg><span>+7 (495) 767-00-07</span></a></li>
-                  <li class="header-menu__item"><a class="header-menu__link header-menu__link header-menu__aut" id="aut_btn" href="#aut" data-toggle="modal" data-target="#aut"> <svg class="icon-fill" width="19px" height="19px">
-                        <use xlink:href="img/sprite.svg#aut"></use>
-                      </svg><span> Личный кабинет</span></a></li>
-                  <ll class="header-menu__item"><a class="header-menu__link header-menu__language" id="header-menu__language" href="#"><svg class="flags" width="20px" height="20px">
-                        <use xlink:href="img/sprite.svg#russia"></use>
-                      </svg><span> Русский </span><svg class="icons arrow_down" id="arrow_down" width="8px" height="8px">
-                        <use xlink:href="img/sprite.svg#arrow_down"></use>
-                      </svg></a>
-                    <ul class="header-menu__language-list" id="language-list">
-                      <li><a class="flagsen" href="#"> <svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#en"></use>
-                          </svg><span>English</span></a></li>
-                      <li><a class="flagscn" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#china"></use>
-                          </svg><span>中文</span></a></li>
-                      <li><a class="flagskr" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#south-korea"></use>
-                          </svg><span>한국어</span></a></li>
-                      <li><a class="flagsde" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#ge"></use>
-                          </svg><span>Deutsch</span></a></li>
-                      <li><a class="flagsit" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#italy"></use>
-                          </svg><span>Italiano</span></a></li>
-                      <li><a class="flagsesp" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#spain"></use>
-                          </svg><span>Español</span></a></li>
-                      <li><a class="flagsesp" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#france"></use>
-                          </svg><span>Français</span></a></li>
-                      <li><a class="flagsjp" href="#"> <svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#japan"></use>
-                          </svg><span>日本語</span></a></li>
-                      <li><a class="flagsport" href="#"> <svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#portugal"></use>
-                          </svg><span>Português</span></a></li>
-                      <li><a class="flagsturk" href="#"><svg class="flags" width="18px" height="18px">
-                            <use xlink:href="img/sprite.svg#turkey"></use>
-                          </svg><span>Türkçe</span></a></li>
-                    </ul>
-                  </ll>
+            <nav class="main-nav" id="nav">
+              <div class="main-nav__row">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item--active"><a href="/about-company/">О компании</a></li>
+                  <li class="main-nav__item"><a href="/to-get-the-team/">Препараты </a></li>
+                  <li class="main-nav__item"><a href="/to-get-the-team/">Статьи</a></li>
+                  <li class="main-nav__item"><a href="/to-get-the-team/">Фармаконадзор</a></li>
+                  <li class="main-nav__item"><a href="/to-get-the-team/">Контакты </a></li>
                 </ul>
               </div>
-            </div>
-            <div class="burger"><button class="burger__btn main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button></div>
-            <nav class="main-nav" id="nav">
-              <div class="main-nav__inner">
-                <div class="main-nav__row">
-                  <div class="main-nav__grid">
-                    <ul class="main-nav__list">
-                      <li class="main-nav__item"><a href="/about-company/">
-                          <h3>О компании</h3>
-                        </a>
-                        <ul class="main-nav__sub-list">
-                          <li class="main-nav__item"><a class="main-nav__link" href="/about-company/">Знакомство с компанией <svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/geography-of-services/">География услуг<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/our-experience/">Наш опыт<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/about-company/facts/rating/">Рейтинги, Награды, Цифры<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/news/">Новости<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/career/">Карьера<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/about-company/why/">Почему “Пепеляев Групп”?<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/about-company/message-from-the-managing-partner/">Обращение Управляющего Партнера<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                        </ul>
-                      </li>
-                      <li class="main-nav__item"><a href="/practice-and-industry/">
-                          <h3>Услуги</h3>
-                        </a></li>
-                      <li class="main-nav__item"><a href="/to-get-the-team/">
-                          <h3>Команда </h3>
-                        </a></li>
-                    </ul>
-                  </div>
-                  <div class="main-nav__grid">
-                    <ul class="main-nav__list">
-                      <li class="main-nav__item"><a href="/analytics-and-brochures/">
-                          <h3>База знаний</h3>
-                        </a>
-                        <ul class="main-nav__sub-list">
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/legislation/">Обзоры<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/alerts/">Алерты<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/articles/">Статьи <svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/comments-in-the-media/">Комментарии в СМИ<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"> </use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/books/">Книги<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/journals/">Журналы<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/bankruptcy-must-read/">Банкротство: Must Read<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/analytics-and-brochures/presentations/">Презентации экспертов<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                        </ul>
-                      </li>
-                      <li class="main-nav__item"><a href="/lp/legalissuesofcovid/">
-                          <h3>COVID-19</h3>
-                        </a></li>
-                    </ul>
-                  </div>
-                  <div class="main-nav__grid">
-                    <ul class="main-nav__list">
-                      <li class="main-nav__item"><a href="/events/">
-                          <h3>Мероприятия</h3>
-                        </a>
-                        <ul class="main-nav__sub-list">
-                          <li class="main-nav__item"><a class="main-nav__link" href="/events/">Мероприятия<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/events/video/">Видеозаписи<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                        </ul>
-                      </li>
-                      <li class="main-nav__item"><a href="/contacts/">
-                          <h3>Контакты</h3>
-                        </a>
-                        <ul class="main-nav__sub-list">
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/moscow/">Москва<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/sankt-peterburg/">Санкт-Петербург <svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"> </use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/krasnoyarsk/">Красноярск<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"> </use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/yuzhno-sakhalinsk/">Южно-Сахалинск<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/vladivostok/">Владивосток<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/peck/">Пекин<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                          <li class="main-nav__item"><a class="main-nav__link" href="/contacts/shanghai/">Шанхай<svg class="main-nav__arrows" width="26px" height="24px">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                              </svg></a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </nav>
-            <div class="search" id="search">
-              <div class="search__inner">
-                <div class="search__row"><svg class="search-close" id="search-close" width="20px" height="20px">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                  <form class="search__form search__row" action="/search/" method="get"><input class="search__text" type="text" name="q" placeholder="Введите поисковый запрос" /><input class="search__submit" type="submit" value="Найти" /></form>
-                </div>
-              </div>
-            </div>
+            <div class="right-part"><a href="tel:+79333333"><svg class="icon-fill" width="20px" height="20px">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg><span>+7 (955) 796-01-45</span></a><a class="btn defoult-btn" href="#feedback" data-toggle="modal" data-target="#feedback">Заказать звонок</a></div>
+            <div class="burger"><button class="burger__btn main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button></div>
           </div>
         </div>
       </header>
@@ -238,57 +64,64 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                 <li class="splide__slide">
                   <figure>
                     <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-0.png" alt="Новости компании" />
+                      <div class="slide-desckription__wrapper">
+                        <h3 class="slide-desckription__title">Компания «Полилаб»</h3>
+                        <h4 class="slide-desckription__text">Исследования и разработка <br><span>инновационных</span> современных ЛЕКАРСТВЕННЫх СРЕДСТВ</h4><a class="btn defoult-btn" href="#feedback" data-toggle="modal" data-target="#ack">Задать вопрос</a>
+                      </div>
+                      <div class="header__animate">ИННОВАЦИИ<div class="count__count">
+                          <div class="count__circle"></div>
+                          <div class="play__circle-green"> </div>
+                          <div class="play__circle-blue"></div>
+                          <div class="circle__inner"></div>
+                        </div>
+                        <div class="hexagon-container">
+                          <div class="hexagon">
+                            <div class="hexagon__wrapper"><span class="one h6"></span><span class="two h3"></span></div>
+                          </div>
+                          <div class="hexagon">
+                            <div class="hexagon__wrapper"><span class="one h1"></span><span class="two h4"></span></div>
+                          </div>
+                          <div class="hexagon">
+                            <div class="hexagon__text">ОТВЕТСТВЕННОСТЬ </div>
+                            <div class="hexagon__wrapper"><span class="one h5"></span><span class="two h2"></span></div>
+                          </div>
+                        </div>
+                        <div class="hexagon-container hexagon-container--one">
+                          <div class="hexagon--one">
+                            <div class="hexagon--one__wrapper"><span class="one h6"></span><span class="two h3"></span></div>
+                          </div>
+                          <div class="hexagon--one">
+                            <div class="hexagon--one__wrapper"><span class="one h1"></span><span class="two h4"></span></div>
+                          </div>
+                          <div class="hexagon--one">
+                            <div class="hexagon--one__text">БЕЗОПАСНОСТЬ</div>
+                            <div class="hexagon--one__wrapper"><span class="one h5"></span><span class="two h2"></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </figure>
                 </li>
                 <li class="splide__slide">
                   <figure>
                     <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-1.png" alt="Новости компании" />
+                      <div class="slide-desckription__wrapper">
+                        <h3 class="slide-desckription__title">Компания «Полилаб»</h3>
+                        <h4 class="slide-desckription__text">Исследования и разработка <br><span>инновационных</span> современных ЛЕКАРСТВЕННЫх СРЕДСТВ</h4><a class="btn defoult-btn" href="#">Задать вопрос</a>
+                      </div>
+                      <div class="header__animate"> <img src="img/product.png" /></div>
+                    </div>
                   </figure>
                 </li>
                 <li class="splide__slide">
                   <figure>
                     <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-2.png" alt="Новости компании" />
-                  </figure>
-                </li>
-                <li class="splide__slide">
-                  <figure>
-                    <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-3.png" alt="Новости компании" />
-                  </figure>
-                </li>
-                <li class="splide__slide">
-                  <figure>
-                    <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-4.png" alt="Новости компании" />
-                  </figure>
-                </li>
-                <li class="splide__slide">
-                  <figure>
-                    <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-5.png" alt="Новости компании" />
-                  </figure>
-                </li>
-                <li class="splide__slide">
-                  <figure>
-                    <div class="slide-desckription">
-                      <h3 class="slide-desckription__title">Новости компании</h3>
-                      <h4 class="slide-desckription__text">«Пепеляев Групп» подтвердила лидерство в рейтинге World Tax and Transfer Pricing, 2021</h4>
-                    </div><img src="img/banner-6.png" alt="Новости компании" />
+                      <div class="slide-desckription__wrapper">
+                        <h3 class="slide-desckription__title">Компания «Полилаб»</h3>
+                        <h4 class="slide-desckription__text">Исследования и разработка <br><span>инновационных</span> современных ЛЕКАРСТВЕННЫх СРЕДСТВ</h4><a class="btn defoult-btn" href="#">Задать вопрос</a>
+                      </div>
+                      <div class="header__animate"> </div>
+                    </div>
                   </figure>
                 </li>
               </ul>
@@ -298,66 +131,53 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
       </div>
       <h1>Error 404</h1>
       <p>Page not found.</p>
-    </div>
+    </div><svg class="border">
+      <use xlink:href="img/sprite.svg#border-footer"> </use>
+    </svg>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner">
-          <div class="footer__inner">
-            <div class="footer__row">
-              <div class="footer__column1">
-                <div class="footer__logo"><svg class="icons" width="62px" height="43px">
+          <div class="page-footer__inner">
+            <div class="page-footer__row">
+              <div class="page-footer__column1">
+                <div class="page-footer__logo"><svg class="icons" width="155px" height="72px">
                     <use xlink:href="img/sprite.svg#logo_bottom"></use>
-                  </svg>
-                  <div class="footer__copyright"><span>© 2002-2020 PEPELIAEV GROUP</span><a href="#">юридические услуги</a></div>
-                </div>
-                <div class="footer__adress">Россия, 125047, г. Москва,<br>ул. 3-я Тверская-Ямская, д. 39, стр.1</div>
-              </div>
-              <div class="footer__column2">
-                <div class="footer__contacts"> <a href="tel:+74957670007"><span> Тел.:</span> +7 (495) 767 00 07</a><a href="mailto:info@pgplaw.ru"><span> E-mail:</span> info@pgplaw.ru</a></div>
-                <div class="footer__feedback"><a href="#feedback" data-toggle="modal" data-target="#feedback"><svg class="icons" width="18px" height="18px">
+                  </svg></div>
+                <div class="page-footer__adress">Россия, 125047, г. Москва,<br>Профсоюзная улица 93А</div>
+                <div class="page-footer__contacts"> <a href="tel:+74957670007"><span> Тел.:</span> +7 (495) 767 00 07</a><a href="mailto:info@pgplaw.ru"><span> E-mail:</span> info@pgplaw.ru</a></div>
+                <div class="page-footer__feedback"><a class="btn defoult-btn defoult-btn--blue" href="#feedback" data-toggle="modal" data-target="#feedback"><svg class="icons" width="18px" height="18px">
                       <use xlink:href="img/sprite.svg#callback"> </use>
-                    </svg><span>Заказать звонок</span></a><a href="https://www.pgplaw.ru/login/"><svg class="icons" width="20px" height="17px">
-                      <use xlink:href="img/sprite.svg#microphone"> </use>
-                    </svg><span>Подписаться на рассылку</span></a></div>
+                    </svg><span>Заказать звонок</span></a></div>
               </div>
-              <div class="footer__column3">
-                <div class="footer__sotials">
-                  <div class="footer__title">Оставаться на связи</div>
-                  <div class="footer__icons"><a href="https://www.facebook.com/PepeliaevGroup"><svg class="icons" width="11px" height="23px">
-                        <use xlink:href="img/sprite.svg#fb"> </use>
-                      </svg></a><a href="http://www.linkedin.com/company/pepeliaev-group"><svg class="icons" width="18px" height="18px">
-                        <use xlink:href="img/sprite.svg#insta"> </use>
-                      </svg></a><a href="https://vk.com/pginternship"><svg class="icons" width="19px" height="12px">
-                        <use xlink:href="img/sprite.svg#vk"> </use>
-                      </svg></a><a href="https://www.youtube.com/channel/UCTI33e7sATSoEqzzZdZrXpA"><svg class="icons" width="16px" height="19px">
-                        <use xlink:href="img/sprite.svg#youtube"></use>
-                      </svg></a><a href="https://www.pgplaw.ru/news/press-releases/pepeliaev-group-in-telegram"><svg class="icons" width="18px" height="15px">
-                        <use xlink:href="img/sprite.svg#telegram"> </use>
-                      </svg></a></div>
+              <div class="page-footer__column2">
+                <div class="page-footer__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ee30d1583797a66249ebd98851fdd95c849fae5c28cb6f3934e19aacc573859&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
-                <div class="footer__info"><a href="/legal-information/">Правовая информация</a><a href="/sitemap.php">Карта сайта</a><a href="/personal-data/">Политика обработки персональных данных</a></div>
               </div>
             </div>
           </div>
         </div>
       </footer>
+      <div class="page-footer__copyright"><span>© 2020 POLILAB</span><a href="#">фармацевтическая компания </a></div>
     </div>
   </div>
-  <div class="modal" id="aut" tabindex="-1" role="dialog">
+  <div class="modal" id="ack" tabindex="-1" role="dialog">
     <div class="modal__dialog" role="document">
       <div class="modal__content">
         <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
-          <h4 class="modal__title">Вход|Регистрация</h4>
+          <h4 class="modal__title">Задать вопрос</h4>
         </div>
         <div class="modal__body">
-          <form class="modal__form" id="login_form"><input name="BACK_URL" type="hidden" value="/login/">
-            <div class="form-control"><label for="LOGIN">E-mail</label><input class="require" id="LOGIN" required="required" name="LOGIN" type="text" autocomplete="off"></div>
-            <div class="form-control"><label for="PASSWORD">Пароль</label><input class="require" id="PASSWORD" required="required" name="PASSWORD" type="password" autocomplete="off"></div>
-            <div class="form-control"><a class="form-link" href="/login/register.php?forgot_password=yes">Забыли пароль?</a></div>
-            <div class="form-control"><input class="button" type="submit" value="Войти"></div>
-            <div class="form-control">
-              <p><a href="https://pgplaw.com/login/register.php?register=yes">Click here</a><span> to subscribe our English newsletters</span></p>
+          <form class="modal__form" id="feedback_form">
+            <div class="form-control"><label for="lastname">Фамилия</label><input class="require" id="lastname" required="required" name="lastname" type="text" autocomplete="off"></div>
+            <div class="form-control"><label for="name">Имя</label><input class="require" id="name" required="required" name="name" type="text" autocomplete="off"></div>
+            <div class="form-control"><label for="phone">Телефон с кодом страны и города</label><input class="require" id="phone" required="required" name="phone" type="text" autocomplete="off"></div>
+            <div class="form-radio">
+              <div><input class="require" id="property" required="required" name="property" type="radio" autocomplete="off"><label for="property">Я врач</label></div>
+              <div><input class="require" id="company" required="required" name="property" type="radio" autocomplete="off"><label for="company">Я пациент</label></div>
             </div>
+            <div class="form-control"></div><label for="message">Суть вашего вопроса<textarea id="message" name="message" required="required"> </textarea></label>
+            <div class="form-control"><input class="button" type="submit" value="Задать вопрос"></div>
+            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «POLILAB» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
           </form>
         </div>
       </div>
@@ -374,12 +194,58 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
             <div class="form-control"><label for="lastname">Фамилия</label><input class="require" id="lastname" required="required" name="lastname" type="text" autocomplete="off"></div>
             <div class="form-control"><label for="name">Имя</label><input class="require" id="name" required="required" name="name" type="text" autocomplete="off"></div>
             <div class="form-control"><label for="phone">Телефон с кодом страны и города</label><input class="require" id="phone" required="required" name="phone" type="text" autocomplete="off"></div>
-            <div class="form-radio"><input class="require" id="property" required="required" name="property" type="radio" autocomplete="off"><label for="property">Физическое лицо</label><input class="require" id="company" required="required" name="property" type="radio" autocomplete="off"><label for="company">Юридическое лицо</label></div>
+            <div class="form-radio">
+              <div><input class="require" id="property" required="required" name="property" type="radio" autocomplete="off"><label for="property">Я врач</label></div>
+              <div><input class="require" id="company" required="required" name="property" type="radio" autocomplete="off"><label for="company">Я пациент</label></div>
+            </div>
             <div class="form-control"></div><label for="message">Суть вашего вопроса<textarea id="message" name="message" required="required"> </textarea></label>
             <div class="form-control"><input class="button" type="submit" value="Заказать звонок"></div>
-            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «Пепеляев Групп» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
+            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «POLILAB» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="consult" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title">Нужна консультация</h4>
+        </div>
+        <div class="modal__body">
+          <form class="modal__form" id="feedback_form">
+            <div class="form-control"><label for="lastname">Фамилия</label><input class="require" id="lastname" required="required" name="lastname" type="text" autocomplete="off"></div>
+            <div class="form-control"><label for="name">Имя</label><input class="require" id="name" required="required" name="name" type="text" autocomplete="off"></div>
+            <div class="form-control"><label for="mail">Электронная поста</label><input class="require" id="phone" required="required" name="mail" type="text" autocomplete="off"></div>
+            <div class="form-radio">
+              <div><input class="require" id="property" required="required" name="property" type="radio" autocomplete="off"><label for="property">Я врач</label></div>
+              <div><input class="require" id="company" required="required" name="property" type="radio" autocomplete="off"><label for="company">Я пациент</label></div>
+            </div>
+            <div class="form-control"></div><label for="message">Какого рода консультация вам требуется?<textarea id="message" name="message" required="required"> </textarea></label>
+            <div class="form-control"><input class="button" type="submit" value="Получить консультацию"></div>
+            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «POLILAB» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="doctor" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title">Анкета для врачей</h4>
+        </div>
+        <div class="modal__body"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="man" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title">Анкета для пациентов</h4>
+        </div>
+        <div class="modal__body"> </div>
       </div>
     </div>
   </div>

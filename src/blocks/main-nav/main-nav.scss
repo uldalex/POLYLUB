@@ -5,18 +5,28 @@
 .main-nav {
 
   $block-name:                &; // #{$block-name}__element
+  @media (min-width: $menu-desktop-width) {
+  @include col(lg, 8);
+  @include col(md, 8);
+  position:relative;
+  height:auto;
+  max-height:200px;
+  margin-top:10px;
+
+  }
+  overflow: hidden;
+  transition: all 1s linear;
   position: absolute;
   top:100%;
-  margin-top:10px;
+ 
   left:0px;
   right:0px;
   width:100%;
    z-index: 10;
   height: 0;
   max-height:0;
-  overflow: hidden;
-  transition: all 1s linear;
-  background-color:#f2e9f1;
+  margin-top:0;
+
 
   &__inner{
     @include container();
@@ -29,6 +39,15 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: $menu-desktop-width) {
+flex-direction: column;
+background-color: $body-bg;
+
+    }
   } 
   
   &__sub-list {
@@ -44,8 +63,13 @@
   &__item {
     position: relative;
     list-style: none;
-    margin: 10px;
+    margin: 10px 10px 0;
+    padding-bottom:10px;
+    border-bottom: 1px dashed transparent;
+    transition:all 0.5s linear;
       &--active {
+        border-bottom: 1px dashed #2b7a77;
+        transition:all 0.5s linear;
 
       & > #{$block-name}__link { // stylelint-disable-line  selector-combinator-blacklist
         color: $black;
@@ -54,14 +78,15 @@
     }
     & a{
       text-decoration: none;
-      color: #232020;
+      color: #2b7a77;
+      font-family: 'GeometriaMedium';
     }
   }
 
   &__link {
     display: block;
     text-decoration: none;
-    color: #232020;
+    color: $text-color;
     padding: 5px 15px;
     display: flex;
     justify-content: space-between;
@@ -148,7 +173,7 @@
     }
   }
 
-
+  
 
   // переключатель
 
@@ -170,4 +195,5 @@
     height:auto;
     max-height:2000px;
   }
+  
 }

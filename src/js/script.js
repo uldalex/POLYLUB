@@ -1,55 +1,39 @@
-// const ready = require('./utils/documentReady.js');
+ const ready = require('./utils/documentReady.js');
 
 // ready(function(){
 //   console.log('DOM героически построен!');
 // });
 
-// const $ = require('jquery');
-// $( document ).ready(function() {});
+ const $ = require('jquery');
+ $( document ).ready(function() {
+ $(window).scroll(function() {
+   if ($(".page-header").length) {
+      let sticky = $(".page-header")[0].offsetTop;
+      let open = 300;
+      if (window.pageYOffset > 300) {
+        $(".page-header").addClass("page-header--open");
+
+      }
+      else if (window.pageYOffset > 100) {
+        $(".page-header").addClass("page-header--fixed");
+
+      } else {
+        $(".page-header").removeClass("page-header--fixed");
+        $(".page-header").removeClass("page-header--open");
+ 
+      }
+   }
+ });
+});
 
 
-var practice = document.getElementById("practice");
-var branch = document.getElementById("branch");
-var children = [].slice.call(practice.children)
-var childrenBranch = [].slice.call(branch.children)
-                    setInterval(function() {
-                        var clone = children.slice();
-                        while (clone.length) {
-                            practice.append(clone.splice(Math.floor(Math.random() * clone.length), 1)[0]);
-                        }
-                    }, 6000);
-                    setInterval(function() {
-                        var clone = childrenBranch.slice();
-                        while (clone.length) {
-                            branch.append(clone.splice(Math.floor(Math.random() * clone.length), 1)[0]);
-                        }
-                    }, 5500);
                    
-document.addEventListener( 'DOMContentLoaded', function () {
-    var splide =new Splide( '#news-block', {
-        direction   : 'ttb',
-        type: 'loop',
-        heightRatio: 1,
-        perPage: 3,
-        perMove: 1,
-        autoplay: true,
-        breakpoints: {
-            1200: {
-                heightRatio: 1.3,
-            },
-            1024: {
-                heightRatio: 0.85,
-            },
-            768: {
-                heightRatio: 0.5,
-            },
-            600: {
-                heightRatio: 1.6,
-            },
-          }  
-       
-        } ).mount();
-    } );
+$(".news-block__list-faq li").on('click', function(){
+ $(this).find('.news-block__closet').toggleClass("news-block__closet--open");
+ $(this).toggleClass("open");
+ $(this).siblings('li').find('.news-block__closet').removeClass("news-block__closet--open");
+ $(this).siblings('li').removeClass('open')
+})
 document.addEventListener( 'DOMContentLoaded', function () {
         var splide =new Splide( '#news-content', {
             direction   : 'ttb',

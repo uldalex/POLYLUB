@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg907"
+   version="1.1"
+   style="height: 153.6px;"
+   viewBox="0 0 1536 153.6"
+   class="wave svelte-1iiwkit">
+  <metadata
+     id="metadata913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>wave</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs911" />
+  <title
+     id="title902">wave</title>
+  <g
+     transform="rotate(-179.97093,768.6075,68.807985)"
+     data-name="Layer 3"
+     id="Layer_3">
+    <path
+       id="path904"
+       d="m 0,110.48431 c 0,0 100.63462,-132.497509 284.47818,-47.464255 185.87558,85.973125 195.06221,-98.568616 408.49768,12.24884 C 910.39781,188.15617 967.65552,-23.084212 1159.6555,76.8 1351.6555,176.68421 1344,32.578051 1536,76.8 v 76.8 L -1.8328436,159.72442 Z"
+       class="wv-2 medium svelte-1iiwkit" />
+  </g>
+</svg>

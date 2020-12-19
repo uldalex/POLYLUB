@@ -32,86 +32,15 @@ html(class='page  no-js', lang='ru')
           +logo('/')
             svg(class="logo__svg")
              use(xlink:href="img/sprite.svg#logo") 
-            h1.logo__title Пепеляев Групп
-          //-header-menu
-          +header-menu()
-            ul.header-menu__list
-              li#search-toggler.header-menu__item
-                svg(class="icons" width="18px" height="18px")
-                  use(xlink:href="img/sprite.svg#search")
-                a.header-menu__link.header-menu__search(href="#") <span>Поиск</span>
-              li.header-menu__item
-                a.header-menu__link.header-menu__phone(href="tel:+74957670007")
-                  svg(class="icon-fill" width="20px" height="20px")
-                    use(xlink:href="img/sprite.svg#phone")
-                  <span>+7 (495) 767-00-07</span>
-              li.header-menu__item
-                a#aut_btn.header-menu__link.header-menu__link.header-menu__aut(href="#aut" data-toggle="modal" data-target="#aut") 
-                  svg(class="icon-fill" width="19px" height="19px")
-                    use(xlink:href="img/sprite.svg#aut")
-                  <span> Личный кабинет</span>
-              ll.header-menu__item
-                a#header-menu__language.header-menu__link.header-menu__language(href="#")
-                  svg(class="flags" width="20px" height="20px")
-                    use(xlink:href="img/sprite.svg#russia")
-                  <span> Русский </span>
-                  svg(id="arrow_down" class="icons arrow_down" width="8px" height="8px")
-                    use(xlink:href="img/sprite.svg#arrow_down")
-                ul#language-list.header-menu__language-list
-                  li
-                    a.flagsen(href="#") 
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#en")
-                      span English
-                  li
-                    a.flagscn(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#china")
-                      span 中文
-                  li
-                    a.flagskr(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#south-korea")
-                      span 한국어
-                  li
-                    a.flagsde(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#ge")
-                      span Deutsch
-                  li
-                    a.flagsit(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#italy")
-                      span Italiano
-                  li
-                    a.flagsesp(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#spain")
-                      span Español
-                  li
-                    a.flagsesp(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#france")
-                      span Français
-                  li
-                    a.flagsjp(href="#") 
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#japan")
-                      span 日本語
-                  li
-                    a.flagsport(href="#") 
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#portugal")
-                      span Português
-                  li
-                    a.flagsturk(href="#")
-                      svg(class="flags" width="18px" height="18px")
-                        use(xlink:href="img/sprite.svg#turkey")
-                      span Türkçe
-          //- navigation
+            h1.logo__title ПОЛИЛАБ
           block nav
-          //- cearch
-          +search()
+          .right-part
+            a(href="tel:+79333333")
+              svg(class="icon-fill" width="20px" height="20px")
+                use(xlink:href="img/sprite.svg#phone")
+              <span>+7 (955) 796-01-45</span>
+            a.btn.defoult-btn(href="#feedback" data-toggle="modal" data-target="#feedback") Заказать звонок
+          +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
           //- banners block
         +carousel()
           //- content block
@@ -127,7 +56,7 @@ html(class='page  no-js', lang='ru')
                       figure 
                         img(src="img/logo-white.svg" width="52px" height="43px")
                     .about-text__content 
-                      p «Пепеляев Групп» – ведущая российская юридическая компания, предоставляющая полный спектр правовых услуг во всех регионах России, странах СНГ и за рубежом. Более 160 юристов в Москве, Санкт-Петербурге, Красноярске, Южно-Сахалинске, Владивостоке, Пекине и Шанхае обеспечивают правовую поддержку более чем 1500 компаний, занятых в разных отраслях экономики, 50% из которых – международные корпорации, осуществляющие долгосрочные инвестиционные проекты на территории России.
+                      p Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
                 .about__events
                   h3.about__title Мероприятия 
                   .about__event
@@ -135,272 +64,130 @@ html(class='page  no-js', lang='ru')
                       .about-text__day 21
                       .about-text__mount Октября 
                     .about-text__event-content 
-                        a(href="#") Продвижение функции комплаенс внутри компании: лучшие практики 
+                        a(href="#") Вебинар : «Консенсус интерниста и клинического фармаколога: фокус на ревматологию»
                   .about__event
                     .about-text__date.about-text__date--old
                       .about-text__day 22
-                      .about-text__mount Октября
+                      .about-text__mount Декабря
                     .about-text__event-content 
-                        a(href="#")  Налоговая кухня. Рецепты от экспертов
+                        a(href="#")  IV Ежегодная Конференция: «Лекарство и дети»
                   .about__event
                     .about-text__date
                       .about-text__day 30
-                      .about-text__mount Октября 
+                      .about-text__mount Января 
                     .about-text__event-content 
-                      a(href="#") Сибирский налоговый форум
+                      a(href="#") VII Ежегодный Конгресс: «Вотчаловские чтения»
           //- section victory
           +victory()
-          //- section practice
-          section.practice
-            .practice__inner
-              .practice__row
-                .practice__content
-                  h3.practice__title Практика 
-                  ul#practice.practice__list 
-                    li.practice__item
-                      a.vaiolit(href="#") Налоговое право и налоговые споры
-                    li.practice__item
-                      a.blue(href="#") Валютное регулирование и валютный контроль 
-                    li.practice__item 
-                      a.grey(href="#") Услуги эскроу-агента 
-                    li.practice__item 
-                      a.red(href="#") Разрешение споров и медиация 
-                    li.practice__item 
-                      a.grey-dark(href="#") Международные суды и арбитраж
-                    li.practice__item 
-                      a.yellow(href="#") Банкротство и антикризисная защита бизнеса
-                    li.practice__item 
-                      a.green-light(href="#") Корпоративное право
-                    li.practice__item
-                      a.blue-dark(href="#") Коммерческая практика
-                    li.practice__item
-                      a.vaiolit-light(href="#") Недвижимость и строительство
-                    li.practice__item
-                      a.rose(href="#") Трудовое и миграционное право
-                    li.practice__item
-                      a.bege(href="#") Правовая защита информации
-                    li.practice__item
-                      a.blue-light(href="#") Семейное и наследственное право
-                    li.practice__item
-                      a.bordo(href="#") Таможенное право и внешнеторговое регулирование
-                    li.practice__item
-                      a.rose-light(href="#") Интеллектуальная собственность и товарные знаки
-                    li.practice__item
-                      a.red-dark(href="#") Антимонопольное регулирование
-                    li.practice__item
-                      a.vaiolit-tein(href="#") Уголовно-правовая защита бизнеса
-                    li.practice__item
-                      a.rose-dark(href="#") Банковская и финансовая практика
-                    li.practice__item
-                      a.vaiolit-superlight(href="#") Административно-правовая защита бизнеса
-                    li.practice__item
-                      a.green-blue(href="#") Legal GR и антикоррупционный комплаенс
-                    li.practice__item
-                      a.blue-light(href="#") Профессиональный перевод
-                    li.practice__item
-                      a.blue-green(href="#") Услуги частным клиентам
-                    li.practice__item
-                      a.green-dark(href="#") Юридическое сопровождение инвестиционных проектов в России
-                    li.practice__item
-                      a.vaiolit(href="#") Бюджетное право
-                    li.practice__item
-                      a.grey-dark(href="#") Законопроектная работа
-                    li.practice__item
-                      a.vaiolit-tein(href="#") Правовой мониторинг
-                .practice__branch
-                  h3.branch__title Отрасли 
-                  ul#branch.branch__list 
-                    li.branch__item
-                      a.grey-dark(href="#") Правовое сопровождение цифровой экономики
-                    li.branch__item
-                      a.red-dark(href="#") Здравоохранение
-                    li.branch__item
-                      a.green-light(href="#") Телеком, Медиа, IT
-                    li.branch__item
-                      a.yellow(href="#") Экология
-                    li.branch__item
-                      a.rose(href="#") Энергетика
-                    li.branch__item
-                      a.vaiolit-light(href="#") ТЭК ­и недро­пользование
-                    li.branch__item
-                      a.bege(href="#") Правовое сопровождение проектов в сфере культуры и искусства  
-                    li.branch__item
-                      a.bordo(href="#") Ретейл
-                    li.branch__item
-                      a.blue-dark(href="#") Авто / Транспорт
-                    li.branch__item
-                      a.red(href="#") Производство потребительских товаров
-                    li.branch__item
-                      a.green-blue(href="#") Морское право
-                    li.branch__item
-                      a.rose-light(href="#") Иные отрасли
+
           //- section news
           section.news
             .news__inner
               .news__row
                 .news-content
-                  h3.news__title Право и налоги: новости дня
+                  h3.news__title Фармакология: новости дня
                   .splide#news-content
                     .splide__track
                       ul.splide__list.news-content__list
                         li.splide__slide.news-content__item 
-                          a(href="#") Президент подписал указ о внесении поправок в Конституцию, которые вступили в силу с 4 июля
+                          a(href="#") Рабочее совещание: «Отчеты Главных клинических фармакологов Округов города Москвы: итоги 2020 года и перспективы развития».
                         li.splide__slide.news-content__item 
-                          a(href="#") Рабочая группа по подготовке поправок к Конституции займется реформой всего законодательства
+                          a(href="#") В рамках программы «Московский врач». Мастер-класс "Мультидисциплинарные аспекты фармакотерапии при оказании первичной медико-санитарной помощи: принципы и подходы клинической фармакологии, борьба с полипрагмазией».
                         li.splide__slide.news-content__item 
-                          a(href="#") Утверждены правила выдачи субсидий бизнесу для профилактики коронавирусной инфекции
+                          a(href="#") Семинар: «Современные возможности клинической фармакологии инфекционных заболеваний : противовирусная, антимикробная терапия в условиях реальной практики»
                         li.splide__slide.news-content__item 
-                          a(href="#") Разработан законопроект, облегчающий доступ к льготным ставкам налогов при выплатах за рубеж
+                          a(href="#") Семинар: «Полипрагмазия в практике врача клинического фармаколога, интерниста : проблемы и пути решения».
                         li.splide__slide.news-content__item 
-                          a(href="#") Международный статус российского флага, под которым ходят суда, может быть понижен до «серой» зоны в общем списке
+                          a(href="#") V Межрегиональная научно-практическая конференция «От клинических рекомендаций – к клиническим алгоритмам»
                         li.splide__slide.news-content__item 
-                          a(href="#") Президент подписал указ о внесении поправок в Конституцию, которые вступили в силу с 4 июля
+                          a(href="#") Учёные ВГУ разрабатывают новую технологию капсул для пролонгированного действия лекарств
                         li.splide__slide.news-content__item 
-                          a(href="#") Рабочая группа по подготовке поправок к Конституции займется реформой всего законодательства
+                          a(href="#") Россия и Китай развивают сотрудничество в области фармобразования и клинической фармакологии
                         li.splide__slide.news-content__item 
-                          a(href="#") Утверждены правила выдачи субсидий бизнесу для профилактики коронавирусной инфекции
+                          a(href="#") Сеченовский университет открывает магистратуру «Компьютерное моделирование в фармакологии»
                         li.splide__slide.news-content__item 
-                          a(href="#") Разработан законопроект, облегчающий доступ к льготным ставкам налогов при выплатах за рубеж
+                          a(href="#") Разработка инновационных препаратов ориентируется на персонализированное лечение
                         li.splide__slide.news-content__item 
-                          a(href="#") Международный статус российского флага, под которым ходят суда, может быть понижен до «серой» зоны в общем списке
+                          a(href="#") Запущен образовательный канал, посвященный лекарственным средствам
                         
                 .news-block
-                  h3.news__title Новости компании 
-                  .splide#news-block
-                    .splide__track
-                      ul.splide__list.news-block__list
-                        li.splide__slide.news-block__item
-                          .news-block__date 05.10.2020
-                          .news-block__text Сергей Пепеляев прокомментировал действия Росприроднадзора в конфликте
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 06.10.2020
-                          .news-block__text Интервью Юлии Бороздна журналу “Трудовые споры”: ”В трудовых спорах кадровая...
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 07.10.2020
-                          .news-block__text Без явки не виноватые: отменено решение суда, вынесенное в отсутствие сторон
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 05.10.2020
-                          .news-block__text Сергей Пепеляев прокомментировал действия Росприроднадзора в конфликте
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 06.10.2020
-                          .news-block__text Интервью Юлии Бороздна журналу “Трудовые споры”: ”В трудовых спорах кадровая...
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 07.10.2020
-                          .news-block__text Без явки не виноватые: отменено решение суда, вынесенное в отсутствие сторон
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 05.10.2020
-                          .news-block__text Сергей Пепеляев прокомментировал действия Росприроднадзора в конфликте
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 06.10.2020
-                          .news-block__text Интервью Юлии Бороздна журналу “Трудовые споры”: ”В трудовых спорах кадровая...
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-                        li.splide__slide.news-block__item
-                          .news-block__date 07.10.2020
-                          .news-block__text Без явки не виноватые: отменено решение суда, вынесенное в отсутствие сторон
-                          a(href="#") Подробнее
-                            svg(class="icons" width="13px" height="12px")
-                              use(xlink:href="img/sprite.svg#arrow_min")
-          //- section map    
-          section.map
-            img(src="img/map.png")     
-          
-      //-footer    
+                  h3.news__title Фармаконадзор 
+                  p Безопасность лекарственных средств для пациента – один из главных векторов <strong>ПОЛИФАРМ</strong>. Система фармаконадзора компании функционирует в соответствии требованиями российских и международных регуляторных органов
+                  ul.news-block__list-faq
+                    li 
+                      div О каких случаях необходимо сообщать в службу фармаконадзора?
+                      .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                    li 
+                      div Как направить сообщение?
+                      .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                    li 
+                      div Когда направить сообщение?
+                      .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                    li 
+                      div Куда и как направить заполненную форму?
+                      .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                  .news-block__buttons
+                    a.btn.defoult-btn(href="#doctor" data-toggle="modal" data-target="#doctor") Анкета для врачей
+                    a.btn.defoult-btn(href="#man" data-toggle="modal" data-target="#man") Анкета для пациентов
+  
+      //-footer
+      svg(class="border")
+        use(xlink:href="img/sprite.svg#border-footer")    
       .page__footer-wrapper
         +page-footer()
           block footer
-          .footer__inner
-              .footer__row
-                .footer__column1
-                  .footer__logo
-                    svg(class="icons" width="62px" height="43px")
+          .page-footer__inner
+              .page-footer__row
+                .page-footer__column1
+                  .page-footer__logo
+                    svg(class="icons" width="155px" height="72px")
                               use(xlink:href="img/sprite.svg#logo_bottom")
-                    .footer__copyright
-                      span © 2002-2020 PEPELIAEV GROUP
-                      a(href="#") юридические услуги
-                  .footer__adress Россия, 125047, г. Москва,<br>ул. 3-я Тверская-Ямская, д. 39, стр.1
-                .footer__column2
-                  .footer__contacts 
+                    
+                  .page-footer__adress Россия, 125047, г. Москва,<br>Профсоюзная улица 93А
+                  .page-footer__contacts 
                     a(href="tel:+74957670007") <span> Тел.:</span> +7 (495) 767 00 07
                     a(href="mailto:info@pgplaw.ru") <span> E-mail:</span> info@pgplaw.ru
-                  .footer__feedback
-                    a(href="#feedback" data-toggle="modal" data-target="#feedback")
+                  .page-footer__feedback
+                    a.btn.defoult-btn.defoult-btn--blue(href="#feedback" data-toggle="modal" data-target="#feedback")
                      svg(class="icons" width="18px" height="18px")
                               use(xlink:href="img/sprite.svg#callback") 
                      span Заказать звонок
-                    a(href="https://www.pgplaw.ru/login/")
-                     svg(class="icons" width="20px" height="17px")
-                              use(xlink:href="img/sprite.svg#microphone") 
-                     span Подписаться на рассылку
-                     
-
-                .footer__column3
-                  .footer__sotials
-                   .footer__title Оставаться на связи
-                   .footer__icons
-                      a(href="https://www.facebook.com/PepeliaevGroup")
-                        svg(class="icons" width="11px" height="23px")
-                          use(xlink:href="img/sprite.svg#fb") 
-                      a(href="http://www.linkedin.com/company/pepeliaev-group")
-                        svg(class="icons" width="18px" height="18px")
-                          use(xlink:href="img/sprite.svg#insta") 
-                      a(href="https://vk.com/pginternship")
-                        svg(class="icons" width="19px" height="12px")
-                          use(xlink:href="img/sprite.svg#vk") 
-                      a(href="https://www.youtube.com/channel/UCTI33e7sATSoEqzzZdZrXpA")
-                        svg(class="icons" width="16px" height="19px")
-                          use(xlink:href="img/sprite.svg#youtube")
-                      a(href="https://www.pgplaw.ru/news/press-releases/pepeliaev-group-in-telegram")
-                        svg(class="icons" width="18px" height="15px")
-                          use(xlink:href="img/sprite.svg#telegram") 
-                  .footer__info
-                    a(href="/legal-information/") Правовая информация
-                    a(href="/sitemap.php") Карта сайта
-                    a(href="/personal-data/") Политика обработки персональных данных
-
-                    
+                .page-footer__column2
+                  .page-footer__map
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ee30d1583797a66249ebd98851fdd95c849fae5c28cb6f3934e19aacc573859&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        .page-footer__copyright
+                      span © 2020 POLILAB
+                      a(href="#") фармацевтическая компания  
             
-    +modal("aut","Вход|Регистрация")
+
+    +modal("ack","Задать вопрос")
         .modal__body 
-          form#login_form.modal__form
-            input(name="BACK_URL" type="hidden" value="/login/")
+          form#feedback_form.modal__form
             .form-control
-              label(for="LOGIN") E-mail
-              input#LOGIN.require(required="required" name="LOGIN" type="text" autocomplete="off")
+              label(for="lastname") Фамилия
+              input#lastname.require(required="required" name="lastname" type="text" autocomplete="off")
             .form-control
-              label(for="PASSWORD") Пароль
-              input#PASSWORD.require(required="required" name="PASSWORD" type="password" autocomplete="off")
+              label(for="name") Имя
+              input#name.require(required="required" name="name" type="text" autocomplete="off")
             .form-control
-              a.form-link(href="/login/register.php?forgot_password=yes") Забыли пароль?
+              label(for="phone") Телефон с кодом страны и города
+              input#phone.require(required="required" name="phone" type="text" autocomplete="off")
+            .form-radio
+              div
+                input#property.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="property") Я врач
+              div
+                input#company.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="company") Я пациент
             .form-control
-              input.button(type="submit" value="Войти")
+            label(for="message") Суть вашего вопроса
+              textarea#message(name="message" required="required") 
+             
             .form-control
-              p
-               a(href="https://pgplaw.com/login/register.php?register=yes") Click here
-               span  to subscribe our English newsletters
-    
+              input.button(type="submit" value="Задать вопрос")
+            .form-agreement
+              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLILAB» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
     +modal("feedback","Заказать звонок")
         .modal__body 
           form#feedback_form.modal__form
@@ -414,10 +201,12 @@ html(class='page  no-js', lang='ru')
               label(for="phone") Телефон с кодом страны и города
               input#phone.require(required="required" name="phone" type="text" autocomplete="off")
             .form-radio
-              input#property.require(required="required" name="property" type="radio" autocomplete="off")
-              label(for="property") Физическое лицо
-              input#company.require(required="required" name="property" type="radio" autocomplete="off")
-              label(for="company") Юридическое лицо
+              div
+                input#property.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="property") Я врач
+              div
+                input#company.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="company") Я пациент
             .form-control
             label(for="message") Суть вашего вопроса
               textarea#message(name="message" required="required") 
@@ -426,8 +215,40 @@ html(class='page  no-js', lang='ru')
               input.button(type="submit" value="Заказать звонок")
             .form-agreement
               input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «Пепеляев Групп» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLILAB» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+    +modal("consult","Нужна консультация")
+        .modal__body 
+          form#feedback_form.modal__form
+            .form-control
+              label(for="lastname") Фамилия
+              input#lastname.require(required="required" name="lastname" type="text" autocomplete="off")
+            .form-control
+              label(for="name") Имя
+              input#name.require(required="required" name="name" type="text" autocomplete="off")
+            .form-control
+              label(for="mail") Электронная поста
+              input#phone.require(required="required" name="mail" type="text" autocomplete="off")
+            .form-radio
+              div
+                input#property.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="property") Я врач
+              div
+                input#company.require(required="required" name="property" type="radio" autocomplete="off")
+                label(for="company") Я пациент
+            .form-control
+            label(for="message") Какого рода консультация вам требуется?
+              textarea#message(name="message" required="required") 
              
+            .form-control
+              input.button(type="submit" value="Получить консультацию")
+            .form-agreement
+              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLILAB» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта»      
+    +modal("doctor","Анкета для врачей")
+        .modal__body 
+    +modal("man","Анкета для пациентов")
+        .modal__body 
+
     block page-bottom
       script(src='js/bundle.js')
 
