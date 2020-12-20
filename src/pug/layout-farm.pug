@@ -41,7 +41,49 @@ html(class='page  no-js', lang='ru')
               <span>+7 (955) 796-01-45</span>
             a.btn.defoult-btn(href="#feedback" data-toggle="modal" data-target="#feedback") Заказать звонок
           +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
-               //-footer
+        .site-content
+          +breadcrumbs()
+            +breadcrumbs-item('Главная', '/index.html')
+            +breadcrumbs-item('Фармаконадзор')
+          .content-area
+            .site-main
+              .posts-container
+                .article
+                  .news-block.news-block--page
+                    h3.news__title Фармаконадзор 
+                    p Безопасность лекарственных средств для пациента – один из главных векторов <strong>ПОЛИФАРМ</strong>. Система фармаконадзора компании функционирует в соответствии требованиями российских и международных регуляторных органов
+                    ul.news-block__list-faq
+                      li 
+                        div О каких случаях необходимо сообщать в службу фармаконадзора?
+                        .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                      li 
+                        div Как направить сообщение?
+                        .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                      li 
+                        div Когда направить сообщение?
+                        .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                      li 
+                        div Куда и как направить заполненную форму?
+                        .news-block__closet Те, кому когда-либо приходилось делать в квартире ремонт, наверное, обращали внимание на старые газеты, наклеенные под обоями. Как правило, пока все статьи не перечитаешь, ничего другого делать не можешь. Интересно же — обрывки текста, чья-то жизнь... Так же и с рыбой. Пока заказчик не прочтет всё, он не успокоится. Бывали случаи, когда дизайн принимался именно из-за рыбного текста, который, разумеется, никакого отношения к работе не имел.
+                    .news-block__buttons
+                      a.btn.defoult-btn(href="#doctor" data-toggle="modal" data-target="#doctor") Анкета для врачей
+                      a.btn.defoult-btn(href="#man" data-toggle="modal" data-target="#man") Анкета для пациентов
+
+            .sitebar
+              
+              .widget
+                .widget-header Полезные ресурсы
+                ul
+                  li 
+                    a(href="#") Ресурс 1
+                  li
+                    a(href="#") Ресурс 2
+                  li
+                    a(href="#") Ресурс 3
+              .widget
+                 a.btn.defoult-btn(href="#consult" data-toggle="modal" data-target="#consult") Нужна консультация
+        
+      //-footer
       svg(class="border")
         use(xlink:href="img/sprite.svg#border-footer")    
       .page__footer-wrapper
@@ -97,8 +139,9 @@ html(class='page  no-js', lang='ru')
             .form-control
               input.button(type="submit" value="Задать вопрос")
             .form-agreement
-              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+              label.checkbox-other(for="agreement") 
+                input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»  
     +modal("feedback","Заказать звонок")
         .modal__body 
           form#feedback_form.modal__form
@@ -125,8 +168,9 @@ html(class='page  no-js', lang='ru')
             .form-control
               input.button(type="submit" value="Заказать звонок")
             .form-agreement
-              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+              label.checkbox-other(for="agreement") 
+                input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»  
     +modal("consult","Нужна консультация")
         .modal__body 
           form#feedback_form.modal__form
@@ -153,8 +197,9 @@ html(class='page  no-js', lang='ru')
             .form-control
               input.button(type="submit" value="Получить консультацию")
             .form-agreement
-              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта»      
+              label.checkbox-other(for="agreement") 
+                input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»  
     +modal("doctor","Анкета для врачей")
         .modal__body 
     +modal("man","Анкета для пациентов")

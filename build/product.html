@@ -34,7 +34,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 <body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
   <div class="page__inner">
     <div class="page__content">
-      <header class="page-header" role="banner">
+      <header class="page-header">
         <div class="page-header__inner">
           <div class="page-header__grid"><a class="logo" href="/"><svg class="logo__svg">
                 <use xlink:href="img/sprite.svg#logo"> </use>
@@ -56,10 +56,25 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
             <div class="burger"><button class="burger__btn main-nav__toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button></div>
           </div>
         </div>
+        <div class="marquee">
+          <marquee>Внимание! Это рецептурный препарат. Если вы не врач, пожалуйста, обратитесь к специалисту!</marquee>
+        </div>
       </header>
-    </div><svg class="border">
-      <use xlink:href="img/sprite.svg#border-footer"> </use>
-    </svg>
+      <div class="product-slider">
+        <div class="product-slider__inner">
+          <div class="product-slider__row">
+            <div class="col6">
+              <h3 class="slide-desckription__title">ИММЕРАН</h3>
+              <h4 class="slide-desckription__text">Противоязвенный препарат, применяемый при гастроэзофагеальном рефлюксе.</h4>
+            </div>
+            <div class="col6"><img src="img/product.png" width="373px"></div>
+          </div>
+        </div>
+      </div><a id="who-trigger" href="#who" data-toggle="modal" data-target="#who"></a>
+      <div class="product-doctors">Здесь будет контент для специалистов</div><svg class="border-product">
+        <use xlink:href="img/sprite.svg#border-footer"> </use>
+      </svg>
+    </div>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner">
@@ -86,6 +101,16 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
       <div class="page-footer__copyright"><span>© 2020 POLIFARM</span><a href="#">фармацевтическая компания </a></div>
     </div>
   </div>
+  <div class="modal" id="who" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <h4 class="modal__title"></h4>
+        </div>
+        <div class="modal__body"> <a class="btn defoult-btn" id="doctor" data-dismiss="modal" aria-label="Закрыть">Я врач</a><a class="btn defoult-btn" id="notdoctor" data-dismiss="modal" aria-label="Закрыть">Я пациент</a></div>
+      </div>
+    </div>
+  </div>
   <div class="modal" id="ack" tabindex="-1" role="dialog">
     <div class="modal__dialog" role="document">
       <div class="modal__content">
@@ -103,7 +128,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
             </div>
             <div class="form-control"></div><label for="message">Суть вашего вопроса<textarea id="message" name="message" required="required"> </textarea></label>
             <div class="form-control"><input class="button" type="submit" value="Задать вопрос"></div>
-            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
+            <div class="form-agreement"><label class="checkbox-other" for="agreement"> <input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><span>«Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»   </span></label></div>
           </form>
         </div>
       </div>
@@ -126,7 +151,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
             </div>
             <div class="form-control"></div><label for="message">Суть вашего вопроса<textarea id="message" name="message" required="required"> </textarea></label>
             <div class="form-control"><input class="button" type="submit" value="Заказать звонок"></div>
-            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
+            <div class="form-agreement"><label class="checkbox-other" for="agreement"> <input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><span>«Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»  </span></label></div>
           </form>
         </div>
       </div>
@@ -149,7 +174,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
             </div>
             <div class="form-control"></div><label for="message">Какого рода консультация вам требуется?<textarea id="message" name="message" required="required"> </textarea></label>
             <div class="form-control"><input class="button" type="submit" value="Получить консультацию"></div>
-            <div class="form-agreement"><input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><label for="agreement">«Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» </label></div>
+            <div class="form-agreement"><label class="checkbox-other" for="agreement"> <input class="required" id="agreement" type="checkbox" required="required" name="agreement" checked="checked"><span>«Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»       </span></label></div>
           </form>
         </div>
       </div>

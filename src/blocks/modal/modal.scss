@@ -181,15 +181,7 @@
   }
 
   &--open {
-
-    @media (min-width: $screen-lg) {
-      display: flex;
-      align-items: center;
-
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        align-items: flex-start;
-      }
-    }
+    display: flex;
   }
 }
 

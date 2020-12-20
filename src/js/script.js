@@ -5,6 +5,7 @@
 // });
 
  const $ = require('jquery');
+const { get } = require('jquery');
  $( document ).ready(function() {
  $(window).scroll(function() {
    if ($(".page-header").length) {
@@ -25,9 +26,14 @@
    }
  });
 });
+$(document).ready(function() { 
+    $('#who-trigger').trigger( "click" );
 
+ });
 
-                   
+ $("#doctor").on('click', function(){
+ $(".product-doctors").addClass('product-doctors--open');    
+ })                  
 $(".news-block__list-faq li").on('click', function(){
  $(this).find('.news-block__closet').toggleClass("news-block__closet--open");
  $(this).toggleClass("open");

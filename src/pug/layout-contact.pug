@@ -15,7 +15,7 @@ html(class='page  no-js', lang='ru')
     meta(name='format-detection', content='email=no')
     meta(content='notranslate', name='google')
     block meta
-      title Home
+      title Контакты
 
     block head
       link(rel='stylesheet', href='css/style.css')
@@ -41,7 +41,76 @@ html(class='page  no-js', lang='ru')
               <span>+7 (955) 796-01-45</span>
             a.btn.defoult-btn(href="#feedback" data-toggle="modal" data-target="#feedback") Заказать звонок
           +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
-               //-footer
+        .site-content
+            +breadcrumbs()
+              +breadcrumbs-item('Главная', '/index.html')
+              +breadcrumbs-item('Контакты')
+            .content-area
+              
+              .col5.ofsetlg1
+                .col12 
+                  .divider
+                    h3.text-center Контакты
+                    svg(class="" width="300px" height="12px")
+                      use(xlink:href="img/sprite.svg#divider")
+                .contact
+                  .contact__block
+                    .contact__title Адрес:
+                    .contact__val Россия, 125047, г. Москва, Профсоюзная улица 93А
+                  .contact__block
+                      .contact__title Телефоны:
+                      .contact__val
+                        span Директор: 
+                        a(href="tel:123456789") +7 425 768-93-10
+                      .contact__val
+                        span Секрктариат:
+                        a(href="tel:123456789") +7 425 452-71-12
+                      .contact__val
+                        span Отдел маркетинга:
+                        a(href="tel:123456789") +7 915 712-64-98
+                  .contact__block
+                      .contact__title E-mail:
+                      .contact__val
+                        span Директор: 
+                        a(href="maleto:info@polifarm.ru") dir@polifarm.ru
+                      .contact__val
+                        span Секретариат: 
+                        a(href="maleto:info@polifarm.ru") info@polifarm.ru
+                      .contact__val
+                        span Отдел маркетинга: 
+                        a(href="maleto:info@polifarm.ru") mail@polifarm.ru
+              .col5
+                form#feedback_form.form
+                  .row
+                    .col12.text-center 
+                      h3.text-center Связаться с нами
+                      .divider
+                        svg(class="" width="300px" height="12px")
+                          use(xlink:href="img/sprite.svg#divider")
+                    .form-control.col6
+                      label(for="lastname") Фамилия
+                      input#lastname.require(required="required" name="lastname" type="text" autocomplete="off")
+                    .form-control.col6
+                      label(for="name") Имя
+                      input#name.require(required="required" name="name" type="text" autocomplete="off")
+                    .form-control.col6
+                      label(for="phone") Телефон с кодом страны и города
+                      input#phone.require(required="required" name="phone" type="text" autocomplete="off")
+                    .form-control.col6
+                      label(for="mail") E-mail
+                      input#phone.require(required="required" name="mail" type="text" autocomplete="off")
+                    .form-control.col12
+                      label(for="message") Суть вашего вопроса
+                      textarea#message(name="message" required="required") 
+                    
+                    .form-control
+                      input.button.btn.defoult-btn(type="submit" value="Задать вопрос")
+                    .form-agreement
+                      label.checkbox-other(for="agreement") 
+                        input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                        span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»  
+          
+      //-footer
       svg(class="border")
         use(xlink:href="img/sprite.svg#border-footer")    
       .page__footer-wrapper
@@ -97,8 +166,9 @@ html(class='page  no-js', lang='ru')
             .form-control
               input.button(type="submit" value="Задать вопрос")
             .form-agreement
-              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+              label.checkbox-other(for="agreement") 
+                       input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                       span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»  
     +modal("feedback","Заказать звонок")
         .modal__body 
           form#feedback_form.modal__form
@@ -125,8 +195,9 @@ html(class='page  no-js', lang='ru')
             .form-control
               input.button(type="submit" value="Заказать звонок")
             .form-agreement
-              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта» 
+              label.checkbox-other(for="agreement") 
+                input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»   
     +modal("consult","Нужна консультация")
         .modal__body 
           form#feedback_form.modal__form
@@ -153,8 +224,9 @@ html(class='page  no-js', lang='ru')
             .form-control
               input.button(type="submit" value="Получить консультацию")
             .form-agreement
-              input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
-              label(for="agreement") «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="www.pgplaw.ru">www.pgplaw.ru</a> в целях установления со мной контакта»      
+              label.checkbox-other(for="agreement") 
+                input#agreement.required(type="checkbox" required="required" name="agreement" checked="checked" )
+                span «Настоящим соглашаюсь на обработку ООО «POLIFARM» моих персональных данных, указанных в заполненной мной форме на сайте <a href="polifarm.ru">polifarm.ru</a> в целях установления со мной контакта»      
     +modal("doctor","Анкета для врачей")
         .modal__body 
     +modal("man","Анкета для пациентов")
