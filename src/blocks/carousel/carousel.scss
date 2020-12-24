@@ -54,7 +54,7 @@
     margin-top: -17.5rem;
     left:30%;
     border-width: 2px;
-    border-color:#2b7a77;
+    border-color:#064965;
     border-style: solid;
     width: 18.625rem;
     height: 18.625rem;
@@ -210,7 +210,7 @@
       position:absolute;
       width:2px;
       height:0%;
-      background:#2b7a77;
+      background:rgb(45,167,220);
       z-index:999999;
     }
 
@@ -446,7 +446,7 @@ $spinner-size: 20px;
 
     svg {
       transition: 0.5s;
-      stroke:#2b7a77;
+      stroke:rgb(45,167,220);;
     }
 
     path {
@@ -560,7 +560,7 @@ $spinner-size: 20px;
   margin: 0 auto;
   height: 50vh;
   z-index: 10;
-  color:#27363b;
+  color:$body-color;
   text-transform: uppercase;
   display: flex;
   align-items:center;
@@ -577,7 +577,7 @@ $spinner-size: 20px;
     }
   }
   & span {
-    color:#00b9b5;
+    color:$blue-alt;
   }
 
  & h3 {

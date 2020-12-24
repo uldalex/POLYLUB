@@ -30,8 +30,7 @@ html(class='page  no-js', lang='ru')
         //- header
         +page-header()
           +logo('/')
-            svg(class="logo__svg")
-             use(xlink:href="img/sprite.svg#logo") 
+            img(src="img/logo.svg")
             h1.logo__title ПОЛИЛАБ
           block nav
           .right-part
@@ -132,7 +131,7 @@ html(class='page  no-js', lang='ru')
   
       //-footer
       svg(class="border")
-        use(xlink:href="img/sprite.svg#border-footer")    
+        use(xlink:href="img/sprite.svg#border1")    
       .page__footer-wrapper
         +page-footer()
           block footer

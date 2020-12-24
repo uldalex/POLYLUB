@@ -68,17 +68,17 @@ background-color: $body-bg;
     border-bottom: 1px dashed transparent;
     transition:all 0.5s linear;
       &--active {
-        border-bottom: 1px dashed #27363b;
+        border-bottom: 1px dashed $text-color-alt;
         transition:all 0.5s linear;
 
       & > #{$block-name}__link { // stylelint-disable-line  selector-combinator-blacklist
-        color:#27363b;
+        color:$text-color-alt;
 
       }
     }
     & a{
       text-decoration: none;
-      color: #2b7a77;
+      color: $text-color-alt;
       font-family: 'GeometriaMedium';
     }
   }

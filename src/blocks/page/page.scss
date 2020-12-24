@@ -168,7 +168,7 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   text-align: left;
-  color: $text-color;
+  color: $body-color;
   background-color: $body-bg;
   overflow-x: hidden;
  position: relative;
@@ -246,19 +246,19 @@ svg {
     overflow: hidden; // Скрыть выступающее за границы в IE
   }
   &.border {
-    fill:#00b9b5;
+    fill:rgb(45,167,222);
     margin-bottom: -10px;
     width:110%;
     margin-left:-10%;
   }
   &.border-bottom {
-    fill:#00b9b5;
+    fill:rgb(45,167,222);
     margin-bottom: -10px;
     width:140%;
     transform: rotate(180deg);
   }
   &.border-product{
-    fill:#00b9b5;
+    fill:rgb(45,167,222);
     margin-bottom: -10px;
     width:110%;
     position: absolute;
@@ -421,14 +421,14 @@ pre {
 
 code {
   padding: 0.06em 0.3em;
-  color: $text-color;
+  color: $text-color-alt;
   background-color: rgba(#000, 0.08);
   border-radius: $border-radius;
 }
 
 kbd {
   padding: 0.06em 0.3em;
-  color: $text-color;
+  color: $text-color-alt;
   background-color: $gray-lightest;
   border-radius: $border-radius;
 
@@ -567,7 +567,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $text-color;
+    background-color: $text-color-alt;
   }
 }
 .about-text__content {
@@ -600,7 +600,7 @@ h2{
 .about-text__date--old{
   @include col(md, 3);
   @include col(sm, 5);
-  background-color: #00b9b5;
+  background-color: rgb(45,167,222);
   color:$body-bg;
 }
 .about-text__day {
@@ -626,10 +626,10 @@ font-size: 14px;
 
   &:hover .about-text__date{
     background-color: #2b7a77;
-    border-left: 3px solid #00b9b5;
-    border-bottom: 3px solid #00b9b5;
-    border-top: 1px solid #00b9b5;
-    border-right: 1px solid #00b9b5;
+    border-left: 3px solid rgb(45,167,222);
+    border-bottom: 3px solid rgb(45,167,222);
+    border-top: 1px solid rgb(45,167,222);
+    border-right: 1px solid rgb(45,167,222);
     transition:all 0.5s linear;
     color: $body-bg;
     cursor: pointer;
@@ -688,7 +688,7 @@ font-size: 14px;
         content:"";
         width:19px;
         height:19px;
-        background-color: #00b9b5;
+        background-color: rgb(45,167,222);
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-left: 4px solid #2b7a77;
@@ -708,8 +708,8 @@ font-size: 14px;
     }
 
     & p {
-      font-family: grad,serif;
-      font-weight: 400;
+
+      font-weight: 300;
       font-style: italic;
       text-align: justify;
       font-size: 18px;
@@ -886,8 +886,8 @@ font-size: 14px;
        height: 12px;
        background: transparent;
        margin: 7px;
-       background-color: #00b9b5;
-       border: 1px solid #00b9b5;
+       background-color: rgb(45,167,222);
+       border: 1px solid rgb(45,167,222);
        padding: 0;
        transition: transfrom 0.2s linear;
  
@@ -953,7 +953,7 @@ font-size: 14px;
 }
 .page-footer{
   color: $body-bg;
-  background-color: $text-color;
+  background-color: $text-color-alt;
   font-family: 'GeometriaLight';
 
   &__inner {
@@ -1092,18 +1092,18 @@ font-size: 14px;
 a.defoult-btn, input.defoult-btn {
   display: inline-block;
     padding: 9px 15px 10px;
-    background: $text-color;
+    background: $text-color-alt;
     color: $body-bg;
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
     border: none;
-    font-family: grad, serif;
+    
     font-weight: 400;
-    font-style: italic;
+
     text-align: center;
     outline: none;
    
     &--blue{
-      background:  #00b9b5;
+      background:  rgb(45,167,222);
     }
     &:hover, &:active, &:focus {
       color: $body-bg;
@@ -1218,10 +1218,10 @@ font-size: 11px;
        
       & a {
         text-decoration: none;
-        color:$text-color;
+        color:$text-color-alt;
 
         &:hover{
-          color:#00b9b5;
+          color:rgb(45,167,222);
         }
       }
     }
@@ -1288,7 +1288,7 @@ margin-bottom: 1rem;
     width:100%;
   }
   input[type=text]:focus,input[type=phone]:focus,input[type=tel]:focus, input[type=mail]:focus {
-    border: 2px solid #00b9b5;
+    border: 2px solid rgb(45,167,222);
 }
   textarea {
     width:100%;
